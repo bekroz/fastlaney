@@ -2,6 +2,11 @@
 #
 .DS_Store
 
+# ENV
+.env.default
+.env.local
+.env
+
 # Xcode
 #
 build/
@@ -55,6 +60,7 @@ buck-out/
 **/fastlane/Preview.html
 **/fastlane/screenshots
 **/fastlane/test_output
+*.p8
 
 # Bundle artifact
 *.jsbundle
