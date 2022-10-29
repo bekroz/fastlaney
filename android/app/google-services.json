@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "48372531206",
+    "project_id": "fastlaney-rn",
+    "storage_bucket": "fastlaney-rn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48372531206:android:5fbb42b76f822f65b40387",
+        "android_client_info": {
+          "package_name": "com.fastlaney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48372531206-lv69095jdp2idmhb371rueeu7bdu15bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fastlaney",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "48372531206-0dth3393uk9t2e3rg1u1htvk2u96ocb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8f9RiiL6KJ23FJp9Br30C1Z_dYVaAkNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48372531206-0dth3393uk9t2e3rg1u1htvk2u96ocb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
