@@ -9,16 +9,16 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
 
   lane :deploy_ios do
+    increment_build_number(xcodeproj: "fastlaney.xcodeproj")
+    build_app(workspace: "fastlaney.xcworkspace", scheme: "fastlaney")
      app_store_connect_api_key(
-        key_id: APP_STORE_KEY_ID,
-        issuer_id: APP_STORE_ISSUER_ID,
-        key_filepath: APP_STORE_AUTH_KEY_PATH,
-        duration: 1200, # optional (maximum 1200)
-        in_house: false # optional but may be required if using match/sigh
-      )
-      pilot
-    increment_build_number(xcodeproj: "#{PROJECT_NAME}.xcodeproj")
-    build_app(workspace: "#{PROJECT_NAME}.xcworkspace", scheme: PROJECT_NAME)
+            key_id: APP_STORE_KEY_ID,
+            issuer_id: APP_STORE_ISSUER_ID,
+            key_filepath: APP_STORE_AUTH_KEY_PATH,
+            duration: 1200, # optional (maximum 1200)
+            in_house: false # optional but may be required if using match/sigh
+     )
+     pilot
     upload_to_testflight
   end
 end
